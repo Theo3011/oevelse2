@@ -8,14 +8,11 @@ import PropsComponent from "./components/PropsComponent";
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* Første komponent */}
       <View style={styles.firstComponentContainer}>
         <FirstComponent />
       </View>
-
-      {/* Nyt view med PropsComponent */}
       <View style={styles.propsComponentContainer}>
-        <PropsComponent name="nigga" />
+        <PropsComponent name="sneo og sarl" />
       </View>
 
       <StatusBar style="auto" />
