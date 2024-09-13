@@ -1,7 +1,7 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
-import FirstComponent from "./components/FirstComponent";
+import FirstComponent from "./components/FirstComponent"; 
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
           width: "100%",
         }}
       >
-        <Text>Dette er den første component</Text>
+        <FirstComponent />
       </View>
 
       <StatusBar style="auto" />
