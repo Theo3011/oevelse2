@@ -17,4 +17,35 @@ const InputComponent = () => {
   );
 };
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: 50,
+  },
+  firstComponentContainer: {
+    flex: 1,
+    backgroundColor: "lightblue",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  propsComponentContainer: {
+    flex: 1,
+    backgroundColor: "lightgreen",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  inputComponentContainer: {
+    flex: 1,
+    backgroundColor: "lightyellow",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+});
+
 export default InputComponent;
