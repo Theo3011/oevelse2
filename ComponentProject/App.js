@@ -5,7 +5,8 @@ import { StyleSheet, View } from "react-native";
 import FirstComponent from "./components/FirstComponent";
 import PropsComponent from "./components/PropsComponent";
 import InputComponent from "./components/InputComponent";
-import ButtonComponent from "./components/ButtonComponent"; // Tilføj ButtonComponent
+import ButtonComponent from "./components/ButtonComponent";
+import AssetComponent from "./components/AssetComponent";
 
 // Logik Sektion (her er ingen yderligere logik for App.js på nuværende tidspunkt)
 export default function App() {
@@ -32,6 +33,11 @@ export default function App() {
         <ButtonComponent />
       </View>
 
+      {/* AssetComponent sektion */}
+      <View style={styles.assetComponentContainer}>
+        <AssetComponent url={require("./assets/favicon.png")} />
+      </View>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -41,37 +47,59 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f8f9fa",
     alignItems: "center",
     justifyContent: "center",
     paddingTop: 50,
+    paddingHorizontal: 20,
   },
   firstComponentContainer: {
     flex: 1,
-    backgroundColor: "lightblue",
+    backgroundColor: "#a2d5f2",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    marginBottom: 10, // Added space between sections
+    padding: 20, // Added padding for better structure
+    borderRadius: 10, // Smooth corners
   },
   propsComponentContainer: {
     flex: 1,
-    backgroundColor: "lightgreen",
+    backgroundColor: "#81b29a",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    marginBottom: 10,
+    padding: 20,
+    borderRadius: 10,
   },
   inputComponentContainer: {
     flex: 1,
-    backgroundColor: "lightyellow",
+    backgroundColor: "#f4d35e",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    marginBottom: 10,
+    padding: 20,
+    borderRadius: 10,
   },
   buttonComponentContainer: {
     flex: 1,
-    backgroundColor: "lightcoral",
+    backgroundColor: "#ee6c4d",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
+    marginBottom: 10,
+    padding: 20,
+    borderRadius: 10,
+  },
+  assetComponentContainer: {
+    flex: 1,
+    backgroundColor: "#e0fbfc",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    padding: 20,
+    borderRadius: 10,
   },
 });
