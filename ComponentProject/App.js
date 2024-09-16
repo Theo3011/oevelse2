@@ -5,19 +5,18 @@ import { StyleSheet, View } from "react-native";
 import FirstComponent from "./components/FirstComponent";
 import PropsComponent from "./components/PropsComponent";
 import InputComponent from "./components/InputComponent"; // Tilføj InputComponent
+import ButtonComponent from "./components/ButtonComponent"; // Tilføj ButtonComponent
 
 // Logik Sektion (her er ingen yderligere logik for App.js på nuværende tidspunkt)
 export default function App() {
-  
   // HTML (View) Sektion
   return (
     <View style={styles.container}>
-      
       {/* FirstComponent sektion */}
       <View style={styles.firstComponentContainer}>
         <FirstComponent />
       </View>
-      
+
       {/* PropsComponent sektion */}
       <View style={styles.propsComponentContainer}>
         <PropsComponent name="sneo og sarl" />
@@ -27,7 +26,10 @@ export default function App() {
       <View style={styles.inputComponentContainer}>
         <InputComponent />
       </View>
-
+      {/* ButtonComponent sektion */}
+      <View style={styles.buttonComponentContainer}>
+        <ButtonComponent />
+      </View>
       <StatusBar style="auto" />
     </View>
   );
