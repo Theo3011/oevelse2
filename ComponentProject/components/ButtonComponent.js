@@ -11,7 +11,7 @@ const ButtonComponent = () => {
   };
 
   return (
-    <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+    <View >
       {/* Skift mellem to tekster afhængigt af state */}
       <Text style={{ fontSize: 18, marginBottom: 20 }}>
         {isCodingAccepted ? "Ja til kode!" : "Nej til kode"}

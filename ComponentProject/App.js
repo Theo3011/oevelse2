@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import FirstComponent from "./components/FirstComponent";
 import PropsComponent from "./components/PropsComponent";
-import InputComponent from "./components/InputComponent"; // Tilføj InputComponent
+import InputComponent from "./components/InputComponent";
 import ButtonComponent from "./components/ButtonComponent"; // Tilføj ButtonComponent
 
 // Logik Sektion (her er ingen yderligere logik for App.js på nuværende tidspunkt)
@@ -26,10 +26,12 @@ export default function App() {
       <View style={styles.inputComponentContainer}>
         <InputComponent />
       </View>
+
       {/* ButtonComponent sektion */}
       <View style={styles.buttonComponentContainer}>
         <ButtonComponent />
       </View>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -61,6 +63,13 @@ const styles = StyleSheet.create({
   inputComponentContainer: {
     flex: 1,
     backgroundColor: "lightyellow",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  buttonComponentContainer: {
+    flex: 1,
+    backgroundColor: "lightcoral",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
